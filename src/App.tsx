@@ -5,6 +5,7 @@ import Statement from './components/Statement';
 import Services from './components/Services';
 import Marketplace from './components/Marketplace';
 import BusinessEnquiry from './components/BusinessEnquiry';
+import GmailHub from './components/GmailHub';
 import Testimonials from './components/Testimonials';
 import Blog from './components/Blog';
 import ProcessStats from './components/ProcessStats';
@@ -46,6 +47,9 @@ export default function App() {
 
         {/* Dedicated Business Enquiry form and brief intake system */}
         <BusinessEnquiry />
+
+        {/* Syncable Gmail Portal & Client Communications Hub */}
+        <GmailHub />
 
         {/* Client Testimonials Section */}
         <Testimonials />

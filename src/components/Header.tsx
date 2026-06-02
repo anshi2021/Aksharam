@@ -76,6 +76,13 @@ export default function Header({ onOpenBooking }: HeaderProps) {
             Business Enquiry
           </button>
           <button
+            onClick={() => scrollTo('communications-hub')}
+            aria-label="Navigate to Gmail Portal and client workspace"
+            className="text-[9px] uppercase tracking-[0.22em] font-bold text-brand-primary bg-brand-primary/10 border border-brand-primary/25 px-2.5 py-1 hover:bg-brand-primary/20 transition-all duration-200 cursor-pointer focus:ring-1 focus:ring-white focus:outline-none"
+          >
+            Gmail Portal
+          </button>
+          <button
             onClick={() => scrollTo('testimonial-section')}
             aria-label="Navigate to Client Testimonials video gallery"
             className="text-[9px] uppercase tracking-[0.2em] font-medium text-blue-100 hover:text-white transition-colors duration-200 cursor-pointer focus:ring-1 focus:ring-white focus:outline-none px-2 py-1"
@@ -159,28 +166,34 @@ export default function Header({ onOpenBooking }: HeaderProps) {
               04 // Business Enquiry
             </button>
             <button
+              onClick={() => scrollTo('communications-hub')}
+              className="text-xs uppercase tracking-[0.25em] font-bold text-brand-primary hover:text-white transition-colors py-2 border-b border-white/5 text-left"
+            >
+              05 // Gmail Portal
+            </button>
+            <button
               onClick={() => scrollTo('testimonial-section')}
               className="text-xs uppercase tracking-[0.25em] font-bold text-slate-300 hover:text-white transition-colors py-2 border-b border-white/5 text-left"
             >
-              05 // Testimonials
+              06 // Testimonials
             </button>
             <button
               onClick={() => scrollTo('blog-section')}
               className="text-xs uppercase tracking-[0.25em] font-bold text-slate-300 hover:text-white transition-colors py-2 border-b border-white/5 text-left"
             >
-              06 // Blog
+              07 // Blog
             </button>
             <button
               onClick={() => scrollTo('process-section')}
               className="text-xs uppercase tracking-[0.25em] font-bold text-slate-300 hover:text-white transition-colors py-2 border-b border-white/5 text-left"
             >
-              07 // About Us
+              08 // About Us
             </button>
             <button
               onClick={handleContactClick}
               className="text-xs uppercase tracking-[0.25em] font-bold text-slate-300 hover:text-white transition-colors py-2 border-b border-white/5 text-left"
             >
-              08 // Contact
+              09 // Contact
             </button>
           </div>
 

@@ -144,7 +144,9 @@ export default function Blog() {
     setTimeout(() => {
       setCopiedPostId(null);
     }, 2000);
-  };  return (
+  };
+
+  return (
     <section id="blog-section" className="py-20 md:py-28 relative border-b border-brand-border bg-brand-bg text-slate-900">
       {/* Soft electric blue top-left visual accent */}
       <div className="absolute top-1/4 left-1/4 w-[400px] h-[300px] bg-brand-primary/10 rounded-full blur-[100px] pointer-events-none" />

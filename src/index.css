@@ -8,9 +8,9 @@
   --color-brand-bg: oklch(0.97 0.015 235);
   --color-brand-card: oklch(1.0 0.0 0);
   --color-brand-card-hover: oklch(0.94 0.02 235);
-  --color-brand-accent: oklch(0.55 0.15 235);
-  --color-brand-primary: oklch(0.55 0.15 235);
-  --color-brand-muted: oklch(0.40 0.04 235);
+  --color-brand-accent: oklch(0.65 0.22 45);
+  --color-brand-primary: oklch(0.65 0.22 45);
+  --color-brand-muted: oklch(0.40 0.04 45);
   --color-brand-border: oklch(0.88 0.02 235);
 }
 
@@ -62,4 +62,20 @@ body {
 .animate-marquee-scroll:hover {
   animation-play-state: paused;
 }
+
+/* Force all headings to elegant orange per user instructions */
+h1, h2, h3, h4, h5, h6,
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
+  color: var(--color-brand-primary) !important;
+}
+
+/* Ensure that transparent/clipping text segments inside headings are not overridden by color */
+h1 span.text-transparent, 
+h2 span.text-transparent, 
+h3 span.text-transparent, 
+h4 span.text-transparent {
+  color: transparent !important;
+}
+
 
